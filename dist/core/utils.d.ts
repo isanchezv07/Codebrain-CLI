@@ -1,0 +1,10 @@
+import type { FileStats } from "./types.js";
+export declare const SUPPORTED_EXTENSIONS: Set<string>;
+export declare function readFilesRecursive(dir: string, exts?: Set<string>): string[];
+export declare function safeRead(file: string): string;
+export declare function detectLang(file: string): string;
+export declare function getFileStats(file: string): FileStats;
+export declare function estimateComplexity(content: string): number;
+export declare function truncate(str: string, max: number): string;
+export declare function relPath(file: string, root: string): string;
+export declare function formatBytes(bytes: number): string;

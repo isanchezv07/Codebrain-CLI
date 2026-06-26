@@ -1,0 +1,33 @@
+{
+  "name": "codebrain",
+  "version": "2.0.0",
+  "description": "The ultimate AI-powered code analysis CLI",
+  "author": "Isanchezv",
+  "type": "module",
+  "bin": {
+    "codebrain": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "ansi-escapes": "^6.2.1",
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "figlet": "^1.7.0",
+    "globby": "^14.0.1",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.23",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.10",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  }
+}
