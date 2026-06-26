@@ -6,6 +6,7 @@ import { bugsCommand } from "./commands/bugs.js";
 import { explainCommand } from "./commands/explain.js";
 import { doctorCommand } from "./commands/doctor.js";
 import { scoreCommand } from "./commands/score.js";
+import { petCommand } from "./commands/pet.js";
 import { getApiKey } from "./ai/client.js";
 // ─── Header ───────────────────────────────────────────────────────────────────
 function printHeader() {
@@ -86,6 +87,11 @@ const MENU_CHOICES = [
         value: "doctor",
         short: "Doctor",
     },
+    {
+        name: `${chalk.green("🐶 Pet")}       ${chalk.dim("Your virtual coding assistant")}`,
+        value: "pet",
+        short: "Pet",
+    },
     new inquirer.Separator(chalk.dim("─".repeat(50))),
     {
         name: `${chalk.dim("✕ Exit")}`,
@@ -132,6 +138,9 @@ export async function startMenu() {
                 }
                 case "doctor":
                     await doctorCommand();
+                    break;
+                case "pet":
+                    await petCommand();
                     break;
                 case "exit":
                     console.log(chalk.cyan("\nBye 👋\n"));
