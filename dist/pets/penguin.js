@@ -1,5 +1,15 @@
 const penguin = {
-    idle: [],
+    idle: [
+        `
+      .--.
+     |o_o |
+     |:_/ |
+    //   \\ \\
+   (|     | )
+  /'\\_   _/'\\
+  \\___)=(___/
+    `
+    ],
     eating: [],
     playing: [],
     sleeping: []

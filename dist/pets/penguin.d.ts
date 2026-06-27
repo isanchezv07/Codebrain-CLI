@@ -1,5 +1,5 @@
 declare const penguin: {
-    idle: never[];
+    idle: string[];
     eating: never[];
     playing: never[];
     sleeping: never[];

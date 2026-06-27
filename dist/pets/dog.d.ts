@@ -1,7 +1,7 @@
 declare const dog: {
-    idle: never[];
-    eating: never[];
-    playing: never[];
-    sleeping: never[];
+    idle: string[];
+    eating: string[];
+    playing: string[];
+    sleeping: string[];
 };
 export default dog;

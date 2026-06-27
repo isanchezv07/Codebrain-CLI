@@ -1,7 +1,7 @@
 declare const cat: {
-    idle: never[];
-    eating: never[];
+    idle: string[];
+    eating: string[];
     playing: never[];
-    sleeping: never[];
+    sleeping: string[];
 };
 export default cat;

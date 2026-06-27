@@ -88,7 +88,7 @@ const MENU_CHOICES = [
         short: "Doctor",
     },
     {
-        name: `${chalk.green("🐶 Pet")}       ${chalk.dim("Your virtual coding assistant")}`,
+        name: `${chalk.green("🐶 Pet")}          ${chalk.dim("Your virtual coding assistant")}`,
         value: "pet",
         short: "Pet",
     },

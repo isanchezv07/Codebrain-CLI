@@ -1,39 +1,39 @@
 export declare const PETS: {
     readonly dog: {
-        idle: never[];
-        eating: never[];
-        playing: never[];
-        sleeping: never[];
+        idle: string[];
+        eating: string[];
+        playing: string[];
+        sleeping: string[];
     };
     readonly cat: {
-        idle: never[];
-        eating: never[];
+        idle: string[];
+        eating: string[];
         playing: never[];
-        sleeping: never[];
+        sleeping: string[];
     };
     readonly rabbit: {
-        idle: never[];
-        eating: never[];
-        playing: never[];
-        sleeping: never[];
+        idle: string[];
+        eating: string[];
+        playing: string[];
+        sleeping: string[];
     };
     readonly fox: {
-        idle: never[];
-        eating: never[];
-        playing: never[];
-        sleeping: never[];
+        idle: string[];
+        eating: string[];
+        playing: string[];
+        sleeping: string[];
     };
     readonly penguin: {
-        idle: never[];
+        idle: string[];
         eating: never[];
         playing: never[];
         sleeping: never[];
     };
     readonly dragon: {
-        idle: never[];
-        eating: never[];
-        playing: never[];
-        sleeping: never[];
+        idle: string[];
+        eating: string[];
+        playing: string[];
+        sleeping: string[];
     };
 };
 export type PetType = keyof typeof PETS;
